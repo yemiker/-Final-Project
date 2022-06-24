@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="dataBase.mysql" />
+          <option value="tests.AboutUs_Test.titlaboutus" />
+          <option value="tests.AboutUs_Test.tittleaboutus" />
+          <option value="OOP.Pages.LoginPage.Locators" />
+          <option value="bytes.presence_of_element_located" />
+          <option value="OOP.Tests.testLogin.*" />
+          <option value="Tests.testLoginPage.*" />
+          <option value="Pages.ReviewPage.self" />
+          <option value="Tests.test_LoginPage.test_login_success" />
+          <option value="Tests.test_LoginPage.driver" />
+          <option value="allure" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

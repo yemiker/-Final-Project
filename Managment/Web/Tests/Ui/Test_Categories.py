@@ -1,0 +1,18 @@
+import time
+import pytest
+from Managment.Web.Base.BasePage import Base
+from Managment.Web.Pages.Categories_page import CategoriesPageFunc
+from Managment.Web.Utils.utils import Utilitis
+
+
+@pytest.mark.usefixtures('connect_home_page')
+class TestCategories(Base):
+    def test_ui_for_categories_page(self):
+        driver = self.driver
+        util = Utilitis(driver)
+        category = CategoriesPageFunc(driver)
+        time.sleep(2)
+        category.click_categories_navbar()
+        time.sleep(2)
+
+        util.assertFunc(category.get_ui_categ_page(),"הוספה\nייצוא\nמזהה\n\tשם\n\tמחלקות\n\tפעיל\n\tשדות\n\tתאריך יצירה\n\n4jp555dl4ojjsdq\ttPFLwMlxYg\tקוניאק\t✓\ttPFLwMlxYg\t\nהיום, 22:09\n\n4jp555dl4oh4ddm\tHXAAhyyKGn\tקוניאק\t✓\tHXAAhyyKGn\t\nהיום, 21:02\n\n4jp555dl4og7dfv\tzNhOFBpMct\tקוניאק\t✓\tzNhOFBpMct\t\nהיום, 20:36\n\n4jp555dl4ofh7rl\tmvbUMLjebX\tקוניאק\t✓\tmvbUMLjebX\t\nהיום, 20:16\n\n4jp555dl4oexnhp\tJnquNxAmoU\tקוניאק\t✓\tJnquNxAmoU\t\nהיום, 20:00\n\n4jp555dl4oe5zm7\tetCqLJSBBh\tקוניאק\t✓\tetCqLJSBBh\t\nהיום, 19:39\n\n4jp555dl4odwghk\tKvrmUTEeNE\tקוניאק\t✓\tKvrmUTEeNE\t\nהיום, 19:31\n\n4jp555dl4odvs10\tHTqduqYQbD\tקוניאק\t✓\tHTqduqYQbD\t\nהיום, 19:31\n\n4jp555dl4o5o3f6\tjizDEOwgYs\tקוניאק\t✓\tjizDEOwgYs\t\nהיום, 15:41\n\n4jp555dl4nwurvp\tEGWKNRauil\tקוניאק\t✓\tEGWKNRauil\t\nהיום, 11:34\n\n4jp555dl4nwp4ih\tyajldZjpes\tקוניאק\t✓\tyajldZjpes\t\nהיום, 11:30\n\n4jp555dl4nwnfw8\tZnbSTCyJAX\tקוניאק\t✓\tZnbSTCyJAX\t\nהיום, 11:28\n\n4jp555dl4nwa3a6\tFFVUTgHDbi\tקוניאק\t✓\tFFVUTgHDbi\t\nהיום, 11:18\n\n4jp555dl4nvrrwo\tUhEuCvnndu\tקוניאק\t✓\tUhEuCvnndu\t\nהיום, 11:04\n\n4jp555dl4nvq5pa\tZSWvWIhLFN\tקוניאק\t✓\tZSWvWIhLFN\t\nהיום, 11:03\n\n4jp555dl4nveppr\tMuWpGEoKmj\tקוניאק\t✓\tMuWpGEoKmj\t\nהיום, 10:54\n\n4jp555dl4nv1491\tKbpcQFPwMu\tקוניאק\t✓\tKbpcQFPwMu\t\nהיום, 10:43\n\n4jp555dl4n3ldn9\tyvizNzQCwQ\tקוניאק\t✓\tyvizNzQCwQ\t\nאתמול, 21:55\n\n4jp555dl4n3i1ry\tcJdqOwouXh\tקוניאק\t✓\tcJdqOwouXh\t\nאתמול, 21:52\n\n4jp555dl4n3gxyo\tUOKIrpKhpB\tקוניאק\t✓\tUOKIrpKhpB\t\nאתמול, 21:52\n\n4jp555dl4n3d11o\tVPAuxEDikb\tקוניאק\t✓\tVPAuxEDikb\t\nאתמול, 21:49\n\n4jp555dl4n3735f\tWQDUzPuPXp\tקוניאק\t✓\tWQDUzPuPXp\t\nאתמול, 21:44\n\n4jp555dl4n33lpv\tvDJXLzTLAc\tקוניאק\t✓\tvDJXLzTLAc\t\nאתמול, 21:41\n\n4jp555dl4n1x9qi\tדני\tTicSCsljYO\t✓\tדני\t\nאתמול, 21:08\n\n4jp555dl4n0mk5b\tאושי\tcwIrkCwKUj\t✓\tאושי\t\nאתמול, 20:32\n\n4jp555dl4h2dotm\tgd\ttea\t✓\tds\t\n16/06/22, 16:34\n\n4jp555dl4h28ka8\td\tapi\t✓\tkj\t\n16/06/22, 16:30\n\n4jp555dl4gvzq84\tשוש\tTOGO\t✓\tשושן\t\n16/06/22, 13:36\n\n4jp555dl4e8dzbk\tגרבגרב\tשמפו נגד קשקשים\t✗\tגרב\t\n14/06/22, 16:59\n\n4jp555dl4e7ywnf\tגרב\tקוניאק\t✓\tגרב\t\n14/06/22, 16:48\n\n4jp555dl4dvbcra\tסוכריה\tקוניאק\t✓\tסוכריה\t\n14/06/22, 10:53\n\n4jp555dl4dv8mjt\tפרחים11\tקוניאק\t✓\tפרחים11\t\n14/06/22, 10:51\n\n4jp555dl4dv7p45\tפרחים1\tקוניאק\t✓\tפרחים1\t\n14/06/22, 10:51\n\n4jp555dl4dunlyr\tפרחים\tקוניאק\t✓\tפרחים\t\n14/06/22, 10:35\n\n4jp555dl4du8oz8\tערק11\tקוניאק\t✓\tערק11\t\n14/06/22, 10:23\n\n4jp555dl4du78be\tערקי1\tניירות\t✗\tערקי1\t\n14/06/22, 10:22\n\n4jp555dl4du6mqf\tערקי\tניירות\t✓\tערקי\t\n14/06/22, 10:22\n\n4jp555dl4du26qp\tערקק\tניירות\t✓\tערק\t\n14/06/22, 10:18\n\n4jp555dl4dt8rbc\tCC\tנייר\t✓\tFGFG\t\n14/06/22, 09:55\n\n4jp555dl4cz8dal\tשמפניה\tקוניאק\t✓\tאוש\t\n13/06/22, 19:55\n\n4jp555dl45pge87\tבירות\tקוניאק\t✓\t1\t\n08/06/22, 17:47\n\npsliag8kpmkdsaq\tחטיפים\tשוקולדים\t✓\tכשרות\t\n07/06/21, 15:02\n\n461hdlknbyuciq\tקנאביס\tבדיקהקנאביס\t✓\t\t\n10/04/21, 19:42\n\nu6z3rgrckkzoqiay\t45645\tבטון\t✓\tfg\t\n10/02/21, 19:06\n\nu6z3r13kkkv9d4hw\tמשקאות\tוודקהקוניאק\t✓\tיבוא מקבילתוצרת הארץ\t\n07/02/21, 16:45\n\n\t\t\t✗\t\t\nמציג \n לעמוד\nסה״כ: 46 שורות")
